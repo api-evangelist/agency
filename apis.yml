@@ -1,7 +1,25 @@
 aid: agency
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/agency.png
 name: Agency
-description: Agency is a company surfaced as a portfolio company of felicis and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Agency (agency.inc) builds Kai, an autonomous AI co-worker for customer success
+  — an AI agent that works a company's entire book of B2B SaaS accounts, monitoring product
+  usage, surfacing churn and expansion signals early, and running personalized onboarding,
+  adoption, and renewal outreach so revenue and customer-success teams have command over
+  their book. Agency raised a $20M Series A led by Menlo Ventures with participation from
+  Sequoia Capital, Felicis, Snowflake Ventures, and Databricks Ventures. It is a demo-led
+  enterprise product and does not currently publish a public API or developer program;
+  this profile captures its identity and security posture.
 url: https://raw.githubusercontent.com/api-evangelist/agency/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,6 +32,11 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Artificial Intelligence
+- AI Agents
+- Customer Success
+- SaaS
+- Revenue Operations
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +46,26 @@ maintainers:
 common:
 - type: Website
   url: https://agency.inc
+- type: Blog
+  url: https://www.agency.inc/blog
+- type: PrivacyPolicy
+  url: https://www.agency.inc/privacy
+- type: TermsOfService
+  url: https://www.agency.inc/terms-of-service
+- type: GitHubOrganization
+  url: https://github.com/agency-inc
+- type: Security
+  url: https://www.agency.inc/security
+- type: Compliance
+  url: https://www.agency.inc/security
+- type: TrustCenter
+  url: security/agency-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/agency-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/agency-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
